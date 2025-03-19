@@ -1,0 +1,89 @@
+body {
+
+    background-color: rgb(11, 11, 11); /* Sets the background color of the page to dark */
+
+    color: white; /* Sets the default text color to white */
+
+    margin: 0; /* Removes default browser margins */
+
+    font-family: Arial, sans-serif; /* Sets the font family for the entire page */
+
+}
+
+.header, .footer {
+
+    background-color: white; /* Sets the background color to white */
+
+    color: black; /* Sets the text color to black */
+
+    text-align: center; /* Centers the text inside header and footer */
+
+    padding: 15px; /* Adds padding around the content for spacing */
+
+}
+
+.container {
+
+    display: grid; /* Uses CSS Grid layout for structuring elements */
+
+    grid-template-columns: 3fr 1fr; /* Creates two columns: content (3 parts) and sidebar (1 part) */
+
+    gap: 10px; /* Adds spacing between grid items */
+
+    padding: 10px; /* Adds padding inside the container */
+
+    background-color: rgb(149, 215, 253); /* Sets the background color to gray */
+
+}
+
+.content {
+
+    display: grid; /* Uses CSS Grid layout for organizing child elements */
+
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns for the .rann elements */
+
+    gap: 10px; /* Adds spacing between the grid items */
+
+}
+
+.rann {
+
+    background-color: rgb(255, 0, 196); /* Sets the background color to orange */
+
+    padding: 20px; /* Adds padding inside each rann block */
+
+    text-align: center; /* Centers the text inside each rann block */
+
+    color: white; /* Sets the text color to white */
+
+}
+
+.rann:nth-last-child(2),
+
+.rann:nth-last-child(1) {
+
+    grid-column: span 2; /* Makes the last two .rann elements span 2 columns each */
+
+}
+
+.sidebar {
+
+    background-color: rgb(7, 81, 218); /* Sets the background color to green */
+
+    padding: 100px; /* Adds padding inside the sidebar */
+
+    margin: 10px; /* Adds margin around the sidebar */
+
+    color: white; /* Sets the text color to white */
+
+    text-align: left; /* Aligns text to the left */
+
+    min-width: 200px; /* Ensures the sidebar has a minimum width of 200px */
+
+}
+
+.footer {
+
+    margin-top: 10px; /* Adds space between the footer and the previous content */
+
+} 
